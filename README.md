@@ -30,12 +30,3 @@ recname => "$hostname",
 }
 ```
 
-### Build Status
-The build should satisfy the following:
-
-* puppet-lint tests
-* rspec tests defined under the rspec dir
-
-The current status is: 
-
-[![Build Status](https://secure.travis-ci.org/avatarnewyork/puppet-cloudbackup.png?branch=master)](http://travis-ci.org/avatarnewyork/puppet-cloudbackup)
