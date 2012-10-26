@@ -17,7 +17,10 @@ class cloudflare::dns (
   $_ttl = " -d 'ttl=$ttl'"
   
   exec{"/usr/bin/curl ${cloudflare::cloudflare_api} $_a $_tkn $_email $_z $_rec_type $_name $_content $_service_mode $_ttl":
-    refreshonly => 1,
-    logoutput => on_failure,
+    logoutput => false,
+    timeout => 45
+  }
+  notify{"CloudFlare rec_new" :
+    message => "CloudFlare rec_new: $recname",
   }
 }
