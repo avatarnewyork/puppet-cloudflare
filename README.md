@@ -1,4 +1,4 @@
-puppet-cloudbackup
+puppet-cloudflare
 ==================
 
 CloudFlare Puppet Module
